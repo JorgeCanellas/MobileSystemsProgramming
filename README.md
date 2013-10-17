@@ -12,6 +12,6 @@ Developed by Ana M. C., Jakko A., Isaac S., Mario C. and Jorge C.
 Misc info
 ---------
 
-Developed at EBEC Aalto Software Dev Competition 24h hackathon 2013, Helsinki, Finlad 
+Developed at EBEC Aalto Software Dev Competition 24h hackathon 2013, Helsinki, Finland 
 
 http://windowsphoneaalto.org/2012/03/an-app-a-day-to-keep-a-worldly-issue-away-ebec-aalto-software-dev-competition/
