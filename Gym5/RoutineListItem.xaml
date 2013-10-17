@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Gym5.RoutineListItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="77" d:DesignWidth="456">
+    
+    <Grid x:Name="LayoutRoot" Margin="0,0,0,-38">
+        <Canvas Height="115" HorizontalAlignment="Left" Name="canvas1" VerticalAlignment="Top" Width="456" Background="Black">
+            <TextBlock Height="35" HorizontalAlignment="Left" Margin="0,0,0,0" x:Name="nameRTextBlock" Text="{Binding NameR}" VerticalAlignment="Center" FontSize="28" Width="168" Canvas.Left="180" Canvas.Top="10" />
+            <TextBlock Height="30" HorizontalAlignment="Center" Margin="0,0,0,0" Name="timeRTextBlock" Text="10 min" VerticalAlignment="Center" Width="83" FontSize="22" Canvas.Left="180" Canvas.Top="65" />
+        </Canvas>
+        <Image HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="125" Source="{Binding Image}" Stretch="Fill"/>
+
+    </Grid>
+</UserControl>

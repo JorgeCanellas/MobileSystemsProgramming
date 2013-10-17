@@ -1,0 +1,56 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Gym5.LiftTrainingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{StaticResource black50}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" HorizontalAlignment="Center" Margin="10,10,10,0" Width="460">            
+            <Image Height="227" HorizontalAlignment="Left" Margin="176,10,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="270" Source="/Images/lifts2.jpg" />
+            <TextBlock Height="60" HorizontalAlignment="Left" Margin="12,10,0,0" Text="Sets" VerticalAlignment="Top" Width="149" FontSize="28" />
+            <TextBlock Height="37" HorizontalAlignment="Left" Margin="12,45,0,0" Name="txt_Sets" Text="3 " VerticalAlignment="Top" Width="46" FontSize="26" FontStyle="Italic" />
+            <TextBlock FontSize="28" HorizontalAlignment="Left" Margin="10,87,0,604" Text="Repetitions" Width="149" VerticalAlignment="Top"/>
+            <TextBlock FontSize="26" FontStyle="Italic" Height="29" HorizontalAlignment="Left" Margin="10,125,0,0" Name="txt_Reps" Text="10" VerticalAlignment="Top" Width="46" />
+            <TextBlock FontSize="28" HorizontalAlignment="Left" Margin="12,170,0,521" Text="Weight" Width="149" VerticalAlignment="Top"/>
+            <TextBlock FontSize="26" FontStyle="Italic" Height="29" HorizontalAlignment="Left" Margin="12,208,0,0" x:Name="txt_Weight" Text="10" VerticalAlignment="Top" Width="46" />
+            <TextBlock FontSize="26" FontStyle="Italic" Height="29" HorizontalAlignment="Left" Margin="62,208,0,0" x:Name="textBlock4_Copy" Text="lbs" VerticalAlignment="Top" Width="59" />
+            <Button Content="Start!" Height="150" HorizontalAlignment="Left" Margin="0,250,0,0" Name="startButton" VerticalAlignment="Top" Width="460" BorderThickness="9" FontSize="56"/>
+            <TextBlock FontSize="26" FontStyle="Italic" Height="37" HorizontalAlignment="Left" Margin="62,45,0,0" Name="textBlock2" Text="sets" VerticalAlignment="Top" Width="46" />
+            <TextBlock FontSize="26" FontStyle="Italic" Height="29" HorizontalAlignment="Left" Margin="60,125,0,0" Name="textBlock4" Text="reps" VerticalAlignment="Top" Width="59" />
+            <Button Content="Skip »" Height="150" HorizontalAlignment="Left" Margin="0,400,0,0" x:Name="skipButton" VerticalAlignment="Top" Width="460" BorderThickness="9" FontSize="56"/>            
+        </Grid>
+        
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

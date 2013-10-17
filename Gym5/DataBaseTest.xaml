@@ -1,0 +1,40 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Gym5.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="183"/>
+            <RowDefinition Height="146"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,10,0,2" Grid.RowSpan="2" RenderTransformOrigin="0.53,0.423">
+            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <Button x:Name="ButtonProfiles" Content="Profiles" Click="Button_Click_1"/>
+            <Button x:Name="ButtonRoutines" Content="Routines" Height="74" Click="ButtonRoutines_Click"/>
+            <Button x:Name="ButtonMachines" Content="Machines" Click="ButtonMachines_Click"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="2" Margin="24,76,0,0"/>
+        <Button x:Name="ButtonExercises" Content="Exercises" HorizontalAlignment="Left" Margin="12,64,0,0" VerticalAlignment="Top" Width="468" Grid.Row="1" Click="ButtonExercises_Click"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="419" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="470">
+                <TextBlock x:Name="TextBlock" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Height="447" Width="460"/>
+</ScrollViewer>
+    </Grid>
+
+</phone:PhoneApplicationPage>

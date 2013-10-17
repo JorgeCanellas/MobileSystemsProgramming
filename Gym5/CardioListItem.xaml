@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Gym5.CardioListItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="77" d:DesignWidth="456">
+    
+    <Grid x:Name="LayoutRoot">
+        <Canvas Height="77" HorizontalAlignment="Left" Name="canvas1" VerticalAlignment="Top" Width="456">
+        <TextBlock Height="43" HorizontalAlignment="Left" Margin="0,0,0,0" Name="cardioExTextBlock" Text="CardioEx" VerticalAlignment="Center" FontSize="32" Width="168" Canvas.Left="6" Canvas.Top="17" />
+        <TextBlock Height="30" HorizontalAlignment="Center" Margin="0,0,0,0" Name="timeTextBlock" Text="time" VerticalAlignment="Center" Width="83" FontSize="24" Canvas.Left="200" Canvas.Top="26" />
+        <TextBlock Height="30" HorizontalAlignment="Right" Margin="0,0,0,0" Name="levelTextBlock" Text="level" VerticalAlignment="Center" Width="85" FontSize="24" Canvas.Left="365" Canvas.Top="26" />
+        </Canvas>
+
+    </Grid>
+</UserControl>
